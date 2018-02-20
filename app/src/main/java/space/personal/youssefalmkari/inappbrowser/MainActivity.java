@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.appbar)
     AppBarLayout appBarLayout;
 
-    private String webURL = "https://reactjs.org/";
+    private String webURL = "file:///android_asset/sample.html";
     private String headerImageUrl =
             "https://cdn-images-1.medium.com/max/2000/1*kt9otqHk14BZIMNruiG0BA.png";
 
@@ -74,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     isShow = true;
                 }
                 else if ( isShow )
-                {
-                    collapsingToolbarLayout.setTitle(" ");
+                {                    collapsingToolbarLayout.setTitle(" ");
                     isShow = false;
                 }
             }
